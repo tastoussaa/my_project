@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Empêche tout défilement */
+}
+
+.container {
+    background-image: url('wpp.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Rendre l'arrière-plan fixe */
+    width: 100vw;
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    display: flex;
+    align-items: flex-start; /* Aligne le contenu en haut */
+    justify-content: left; /* Positionne le texte sur le côté vide */
+    position: relative; /* Nécessaire pour le positionnement absolu du bouton */
+    padding-top: 00px; /* Ajoute un espacement supérieur */
+}
+
+.text-section {
+    padding: 5px; /* Ajustement de l'espacement pour mieux voir le contenu */
+    color: white;
+    text-align: left;
+    max-width: 500px;
+    z-index: 1; /* Assurer que le contenu soit au-dessus de l'arrière-plan */
+}
+
+h1 {
+    padding-left: 20%;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les boutons d'authentification */
+.auth-buttons {
+    position: absolute; /* Positionnement absolu pour le placer sur le fond */
+    right: 25px; /* Distance par rapport au bord gauche */
+    top: 91%; /* Centrer verticalement */
+    transform: translateY(-50%); /* Ajuster le centrage vertical */
+    display: flex; /* Utiliser flexbox pour empiler les boutons verticalement */
+    flex-direction: row; /* Les boutons seront empilés verticalement */
+    gap: 6px; /* Espace entre les boutons */
+}
+
+.btn {
+    padding: 15px 35px;
+    background-color: #ff4d4d91;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #03594e;
+}
+
+/* Styles pour le bouton de visualisation des données */
+.data-visualization-container {
+    position: absolute; /* Positionnement absolu pour le placer sur le fond */
+    right: 40px; /* Distance par rapport au bord gauche */
+    top: 80%; /* Centrer verticalement */
+    transform: translateY(-50%); /* Ajuster le centrage vertical */
+    display: flex; /* Utiliser flexbox pour empiler les boutons verticalement */
+    flex-direction: column; /* Les boutons seront empilés verticalement */
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.data-visualization-button, .data-cleaning-button {
+    padding: 15px 35px;
+    background-color: #ff4d4d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.data-visualization-button:hover, .data-cleaning-button:hover {
+    background-color: #ff4d4d;
+}
+.title {
+    font-family: 'Dancing Script', cursive; /* Handwriting font */
+    font-size: 90px; /* Adjust size as needed */
+    color: #064b50b0; /* Adjust color as needed */
+    margin-bottom: 0px; /* Adjust spacing as needed */
+    padding-top: 0%;
+    padding-left: 8%;
+    margin-top: 0%;
+    letter-spacing:8px;
+    position: relative; /* Nécessaire pour que le texte soit positionné par rapport à ce bloc */
+    display: inline-block;
+}
+.sub-text {
+    position: absolute;
+    left: 131px; /* Ajustez cette valeur pour la position horizontale */
+    top: 90px;  /* Ajustez cette valeur pour la position verticale */
+    font-size: 12px; /* Taille du texte secondaire */
+    color: #761e19;
+    width: 150%;
+    font-family: Verdana, Geneva, sans-serif;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-variant: small-caps;
+
+}
+
+  

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Cleaning</title>
+    <link rel="stylesheet" href="cleaning.css">
+</head>
+<body>
+    <header>
+        <h1>Data Cleaner</h1>
+    </header>
+
+    <main>
+        <section class="file-upload">
+            <h2>Importez vos données</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="dataset" id="dataset" accept=".csv, .xlsx" required>
+                <button type="submit">Import and clean your data</button>
+            </form>       
+        </section>
+
+        <section class="dataset-info" id="dataset-info">
+            <!-- Informations générales sur les données (apparaîtront après l'import) -->
+        </section>
+
+        <section class="cleaned-data" id="cleaned-data">
+            <!-- Données nettoyées et bouton de téléchargement -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
